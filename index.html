@@ -93,6 +93,11 @@
             background-color: #1abc9c;
             background-image: url('pics/bus.png');
         }
+
+        .bicycle {
+            background-color: #f39c12;
+            background-image: url('pics/bicycle.jpg');
+        }
     </style>
 </head>
 
@@ -128,6 +133,11 @@
             <button class="counter-button bus" onclick="incrementCounter('bus')">Автобуси</button>
             <div class="counter-value" id="bus-counter">0</div>
         </div>
+
+         <div class="counter-row">
+            <button class="counter-button bicycle" onclick="incrementCounter('bicycle')">Велосипед</button>
+            <div class="counter-value" id="bicycle-counter">0</div>
+        </div>
     </div>
 
     <script>
@@ -137,7 +147,8 @@
             truckMedium: 0,
             truckLarge: 0,
             busRoute: 0,
-            bus: 0
+            bus: 0,
+            bicycle:0
         };
 
         function incrementCounter(type) {
